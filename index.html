@@ -8,7 +8,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="controls">
+            <div class="control slider-container">
+                <label for="slider" id="slider-label"></label>
+                <input type="range" id="slider" name="grid-size" min="0" max="60">
+            </div>
+            <div class="control">
+                <label for="color-picker">Choose Pen Color: </label>
+                <input type="color" id="color-picker">
+            </div>
+            <div class="control">
+                <button id="color">Single color</button>
+            </div>
+            <div class="control">
+                <button id="rainbow">Random colors</button>
+            </div>
+            <div class="control">
+                <button id="eraser">Eraser</button>
+            </div>
+            <div class="control">
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+        <div class="grid-container">
+            <h1>Etch - A - Sketch</h1>
+            <div id="grid"></div>
+        </div>
+    </div>
 </body>
 <script src="scripts.js"></script>
 </html>
